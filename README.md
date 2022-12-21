@@ -30,6 +30,7 @@ Write your own steps
 from django.db import models
 from django.contrib import admin
 # Create your models here.
+```
 class train(models.Model):
     trainnumber = models.IntegerField(max_length=10, help_text="Your Train Number")
     name =models.CharField(max_length=100)
@@ -42,7 +43,7 @@ class train(models.Model):
     depaturedate = models.DateField()
 class TrainAdmin(admin.ModelAdmin):
     list_display = ('trainnumber','name','age','email','stationname','destination','classtype','depaturedate')    
-
+```
 
 
 ## OUTPUT
